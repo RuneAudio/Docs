@@ -1,0 +1,6 @@
+site_name: RuneAudio
+site_url: http://www.runeaudio.com/
+site_description: Free and open source Hi-Fi music player for embedded hardware.
+repo_url: https://github.com/RuneAudio/Docs.git
+theme_dir: 'runeaudio_theme'
+dev_addr: 127.0.0.1:8080
