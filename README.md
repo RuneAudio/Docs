@@ -4,6 +4,12 @@ This is the official documentation for [RuneAudio](http://www.runeaudio.com/ "Ru
 
 It is written in [Markdown](http://en.wikipedia.org/wiki/Markdown) syntax ([how it works](http://daringfireball.net/projects/markdown/syntax)) and built with [MkDocs](http://www.mkdocs.org/).
 
+Useful resources:
+
+- [Markdown syntax](http://daringfireball.net/projects/markdown/syntax) - official syntax reference
+- [to-markdown](http://domchristie.github.io/to-markdown/) - online HTML to Markdown converter
+- [StackEdit](http://domchristie.github.io/to-markdown/) - WYSIWYG Markdown editor
+
 Contribution
 -------------------
 **You can be part of this!** Anyone can contribute to this documentation.
