@@ -65,11 +65,37 @@ body {
 -------------------------------------------------------------- */
 
 
+
+
 /* Content
 -------------------------------------------------------------- */
 
 h1, h2 {
 	text-transform: uppercase;
+}
+h1 {
+	padding-bottom: 10px;
+	border-bottom: 10px solid #222;
+}
+
+
+
+/* Bootstrap overwrites
+-------------------------------------------------------------- */
+
+.alert, .alert-danger, .alert-success, .alert-info, .alert-warning {
+    background-color: #222;
+    border: none;
+}
+.alert-info {
+    color: #C3D6DF;
+}
+.alert-warning {
+    color: #C09853;
+}
+.alert i {
+    margin-right: 10px;
+	font-size: 20px;
 }
 
 

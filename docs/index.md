@@ -2,7 +2,9 @@
 
 ## Quick start guide
 
-**WORK IN PROGRESS** &#8211; This guide is under construction and the information in it could be incomplete. We apologize for the inconvenience. [Want to help us?](http://www.runeaudio.com/forum/improve-the-docs-t332.html "RuneAudio Forum")
+<div class="alert alert-warning">WORK IN PROGRESS &#8211; This guide is under construction and the information in it could be incomplete. We apologize for the inconvenience.</div>
+
+[Want to help us?](http://www.runeaudio.com/forum/improve-the-docs-t332.html "RuneAudio Forum")
 
 This guide assumes that you already own [a certified device](http://www.runeaudio.com/certified-devices/ "Certified devices") on which to run RuneAudio, and an SD card (at least 4GB) on which to write the image file.
 
