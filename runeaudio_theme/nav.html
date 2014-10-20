@@ -12,7 +12,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href="{{ homepage_url }}" title="{{ site_name }}"><img src="http://www.runeaudio.com/assets/img/logo.png" alt="{{ site_name }}"></a>
+            <a class="navbar-brand" href="http://www.runeaudio.com" title="RuneAudio"><img src="http://www.runeaudio.com/assets/img/logo.png" alt="RuneAudio"></a>
         </div>
 
         <!-- Expanded navigation -->
@@ -48,24 +48,17 @@
                 {% endif %}
                 <li {% if not previous_page %}class="disabled"{% endif %}>
                     <a rel="next" {% if previous_page %}href="{{ previous_page.url }}"{% endif %}>
-                        <i class="fa fa-arrow-left"></i> Previous
+                        <i class="fa fa-arrow-left"></i>
                     </a>
                 </li>
                 <li {% if not next_page %}class="disabled"{% endif %}>
                     <a rel="prev" {% if next_page %}href="{{ next_page.url }}"{% endif %}>
-                        Next <i class="fa fa-arrow-right"></i>
+                        <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
                 {% if repo_url %}
                 <li>
-                    <a href="{{ repo_url }}">
-                        {% if repo_name == 'GitHub' %}
-                            <i class="fa fa-github"></i>
-                        {% elif repo_name == 'Bitbucket' %}
-                            <i class="fa fa-bitbucket"></i>
-                        {% endif %}
-                        {{ repo_name }}
-                    </a>
+                    <a href="{{ repo_url }}" target="_blank"><i class="fa fa-github"></i> {{ repo_name }}</a>
                 </li>
                 {% endif %}
             </ul>

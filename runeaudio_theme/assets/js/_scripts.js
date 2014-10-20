@@ -62,4 +62,15 @@ jQuery(document).ready(function ($) { 'use strict';
 		return $(this).find('p').html().substring(10);
 	});
 	
+	// set width of the parent div
+	function sidebarResize() {
+		$('.bs-sidebar').each(function(){
+			$(this).width($(this).parent().width());
+		});
+	}
+	sidebarResize();
+	$(window).on('resize', function() {
+		sidebarResize();
+	});
+	
 }); //]]>

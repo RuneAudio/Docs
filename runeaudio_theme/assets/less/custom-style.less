@@ -22,7 +22,7 @@ i.dx { margin-left: 5px; }
 -------------------------------------------------------------- */
 
 body {
-	padding: @navbar-height 0 30px;
+	padding: @navbar-height 0 0;
 }
 
 
@@ -32,9 +32,20 @@ body {
 
 .navbar-brand {
     line-height: @navbar-height;
-    padding: 0 15px;
+    margin: 0 30px 0 0;
+	padding: 0 15px;
 	img {
 		margin: -4px 0 0 3px;
+	}
+}
+.navbar-default .navbar-nav {
+	& > li > a {
+		color: #ddd;
+	}
+	& > li.active > a,
+	& > li > a:hover,
+	& > li > a:focus {
+		color: @brand-primary;
 	}
 }
 
@@ -46,15 +57,35 @@ body {
 .bs-sidenav {
 	margin-top: 26px;
 	& > li > a {
+		position: relative;
 		padding: 5px 15px;
+		&:before {
+			position: absolute;
+			top: 5px;
+			left: 0;
+			display: block;
+			font-family: 'FontAwesome';
+			content: '\f0da';
+			color: #666;
+		}
 	}
-	& > li.active > a {
-		font-weight: bold;
-		color: #fff;
+	& > li.main > a {
+		padding: 5px 0;
+		// border-bottom: 1px dashed #555;
+		text-transform: uppercase;
+		color: #888;
+		&:before {
+			display: none;
+		}
 	}
 	& > li > a:hover,
 	& > li > a:focus {
-		background: #222;
+		background: transparent;
+		color: #fff;
+	}
+	& > li.active > a,
+	& > li.main.active > a {
+		font-weight: bold;
 		color: #fff;
 	}
 }
@@ -64,6 +95,65 @@ body {
 /* Footer
 -------------------------------------------------------------- */
 
+#footer {
+	margin-top: 60px;
+	padding: 10px 0 40px;
+	background: #222;
+	font-size: 14px;
+	color: #aaa;
+	.container {
+		padding-top: 10px;
+	}
+	h4 {
+		color: #fff;
+	}
+	a {
+		color: #666;
+	}
+	a:hover,
+	a:focus {
+		text-decoration: none;
+		color: #fff;
+	}
+	.credits {
+		text-align: right;
+	}
+}
+.footer-menu {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		a {
+			display: block;
+			line-height: 30px;
+			text-transform: uppercase;
+			color: #ddd;
+		}
+		a:hover,
+		a:focus {
+			text-decoration: none;
+		}
+	}
+}
+/* responsive FB like box */
+.footer-buttons {
+	a {
+		display: inline-block;
+		width: 30px;
+		margin: 10px 0 10px 40px;
+		padding: 0;
+		text-align: center;
+		i {
+			font-size: 40px;
+			width: 24px;
+		}
+	}
+}
 
 
 
@@ -76,6 +166,10 @@ h1, h2 {
 h1 {
 	padding-bottom: 10px;
 	border-bottom: 10px solid #222;
+}
+h4, h5 {
+	font-weight: 400;
+	color: #c09853;
 }
 strong {
     color: #ccc;
@@ -120,7 +214,9 @@ pre, .alert, .alert-danger, .alert-success, .alert-info, .alert-warning {
 }
 // sotto i 768px
 @media (max-width: @screen-sm) {
-
+	.affix {
+		position: relative;
+	}
 }
 // sopra i 768px
 @media (min-width: @grid-float-breakpoint) {
@@ -128,7 +224,12 @@ pre, .alert, .alert-danger, .alert-success, .alert-info, .alert-warning {
 }
 // fra 768px e 979px
 @media (min-width: @screen-sm) and (max-width: @screen-md) { 
-
+	.navbar-right {
+		display: none;
+	}
+	.affix {
+		position: relative;
+	}
 }
 // fra 992px e 1200px
 @media (min-width: @screen-md) and (max-width: @screen-lg) { 
