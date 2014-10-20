@@ -18,7 +18,7 @@ jQuery(document).ready(function ($) { 'use strict';
 
 
 	/* Prevent disabled links from causing a page reload */
-	$("li.disabled a").click(function() {
+	$('li.disabled a').click(function() {
 		event.preventDefault();
 	});
 
@@ -38,12 +38,12 @@ jQuery(document).ready(function ($) { 'use strict';
 			}
 		}
 	};
-	if (location.hash) {shiftWindow();}
-	window.addEventListener("hashchange", shiftWindow);
+	if (location.hash) { shiftWindow(); }
+	window.addEventListener('hashchange', shiftWindow);
 
 
 	/* Deal with clicks on nav links that do not change the current anchor link. */
-	$("ul.nav a" ).click(function() {
+	$('ul.nav a').click(function() {
 		var href = this.href;
 		var suffix = location.hash;
 		var matchesCurrentHash = (href.indexOf(suffix, href.length - suffix.length) !== -1);
@@ -52,6 +52,14 @@ jQuery(document).ready(function ($) { 'use strict';
 			window.disableShift = true;
 			location.hash='';
 		}
+	});
+	
+	// transform H5 tags into Bootstrap's alerts
+	$('blockquote:contains("[INFO]")').addClass('alert alert-info').html(function(){
+		return $(this).find('p').html().substring(7);
+	});
+	$('blockquote:contains("[WARNING]")').addClass('alert alert-warning').html(function(){
+		return $(this).find('p').html().substring(10);
 	});
 	
 }); //]]>

@@ -2,11 +2,13 @@
 
 ## Quick start guide
 
-<div class="alert alert-warning">WORK IN PROGRESS &#8211; This guide is under construction and the information in it could be incomplete. We apologize for the inconvenience.</div>
+> [WARNING] <i class="fa fa-gears sx"></i> WORK IN PROGRESS &#8211; This guide is under construction and the information in it could be incomplete.
 
-[Want to help us?](http://www.runeaudio.com/forum/improve-the-docs-t332.html "RuneAudio Forum")
+<p class="txtmid">
+	<img class="aligncenter" alt="" src="http://www.runeaudio.com/assets/img/documentation.png">
+</p>
 
-This guide assumes that you already own [a certified device](http://www.runeaudio.com/certified-devices/ "Certified devices") on which to run RuneAudio, and an SD card (at least 4GB) on which to write the image file.
+> [INFO] This guide assumes that you already own [a certified device](http://www.runeaudio.com/certified-devices/ "Certified devices") on which to run RuneAudio, and an SD card (at least 4GB) on which to write the image file.
 
 ### Download and extract
 
@@ -26,7 +28,7 @@ Write the extracted .img file to your SD card, following the instruction in one 
 
 When the write process has finished, safely unmount the SD card and plug it into your device.
 
-**Make sure your SD card is not [write protected](http://kb.sandisk.com/app/answers/detail/a_id/1102/~/memory-card-is-write-protected-or-locked) before writing the image to it, and before plugging it into your device.**
+> [WARNING] Make sure your SD card is not [write protected](http://kb.sandisk.com/app/answers/detail/a_id/1102/~/memory-card-is-write-protected-or-locked) before writing the image to it, and before plugging it into your device.
 
 ### Prepare the device
 
@@ -66,7 +68,7 @@ Network attached storages (NAS) can be added via Samba/NFS. To add a network sou
 
 ## Advanced users
 
-**Make sure you are completely confident and that you know what you are doing before fiddling about, as you could mess things up. Alteration of the configuration might result in you having to reimage your SD card and start again.**
+> [WARNING] <i class="fa fa-exclamation sx"></i> Make sure you are completely confident and that you know what you are doing before fiddling about, as you could mess things up. Alteration of the configuration might result in you having to reimage your SD card and start again.
 
 Due to the integrated nature of the system (and the strong interaction between RuneUI and RuneOS), the manual editing of the system configuration files is not recommended, as they are periodically written by the RuneUI PHP worker. Please understand this behaviour before complaining about any malfunctions which may occur as a result of any manual modification.
 
