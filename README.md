@@ -2,7 +2,7 @@ RuneAudio documentation
 ======================
 This is the official documentation for [RuneAudio](http://www.runeaudio.com/ "RuneAudio"), written by the [RuneAudio team](http://www.runeaudio.com/team/ "RuneAudio team") and mantained by the [community](http://www.runeaudio.com/forum/ "RuneAudio forum").
 
-It is written in [Markdown](http://en.wikipedia.org/wiki/Markdown) syntax ([how it works](http://daringfireball.net/projects/markdown/syntax)) and built with [MkDocs](http://www.mkdocs.org/).
+It is written in [Markdown](http://en.wikipedia.org/wiki/Markdown) syntax and built with [MkDocs](http://www.mkdocs.org/).
 
 Useful resources:
 
