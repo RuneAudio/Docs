@@ -1,0 +1,186 @@
+// Brand colors
+// -------------------------
+@brand-primary:         rgba(0,149,216,1);
+@brand-alt:				#ccc;
+
+
+// Scaffolding
+// -------------------------
+@body-bg:               #000;
+@text-color:            #888;
+
+
+// Typography
+// -------------------------
+@font-family-sans-serif:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@headings-font-family:    @font-family-sans-serif;
+@headings-font-weight:    300;
+@headings-color:          #fff;
+
+@font-size-base:          16px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+@line-height-base:        1.625;
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+
+// Components
+// -------------------------
+// Based on 14px font-size and 1.428 line-height (~20px to start)
+
+@padding-btn-vertical:         11px;
+@padding-btn-horizontal:       19px;
+
+@border-radius-base:			6px;
+@border-color:					#eee; // custom variable
+
+
+// Buttons
+// -------------------------
+@btn-default-color:              #333;
+@btn-default-bg:                 @brand-alt;
+@btn-default-border:             @brand-alt;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             @brand-primary;
+
+@btn-success-color:              @text-color;
+@btn-success-bg:                 @brand-success;
+@btn-success-border:             darken(@btn-success-bg, 5%);
+
+@btn-warning-color:              @text-color;
+@btn-warning-bg:                 @brand-warning;
+@btn-warning-border:             darken(@btn-warning-bg, 5%);
+
+@btn-danger-color:               @text-color;
+@btn-danger-bg:                  @brand-danger;
+@btn-danger-border:              darken(@btn-danger-bg, 5%);
+
+@btn-info-color:                 @text-color;
+@btn-info-bg:                    @brand-info;
+@btn-info-border:                darken(@btn-info-bg, 5%);
+
+@btn-link-disabled-color:        @gray-light;
+
+
+// Forms
+// -------------------------
+@input-bg:                       #f5f5f5;
+@input-bg-disabled:              darken(@input-bg, 10%);
+
+@input-color:                    @text-color;
+@input-border:                   darken(@input-bg, 10%);
+@input-border-radius:            0;
+@input-border-focus:             @brand-primary;
+
+@input-height-large:             (ceil(@font-size-base * @line-height-large) + (@padding-large-vertical * 2) + 2);
+
+@legend-color:                   @text-color;
+@legend-border-color:            @brand-alt;
+
+
+// Grid system
+// -------------------------
+@grid-columns:              12;
+@grid-gutter-width:         30px;
+@grid-float-breakpoint:     @screen-sm-min;
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+
+// Navbar
+// -------------------------
+@navbar-height:                    80px;
+@navbar-default-color:             @brand-primary;
+@navbar-default-bg:                #222;
+@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+
+
+// Dropdowns
+// -------------------------
+@dropdown-bg:                    #fff;
+@dropdown-border:                #fff;
+@dropdown-fallback-border:       #fff;
+@dropdown-divider-bg:            #e5e5e5;
+
+@dropdown-link-color:            @gray-dark;
+@dropdown-link-hover-color:      darken(@gray-dark, 5%);
+@dropdown-link-hover-bg:         #f5f5f5;
+
+@dropdown-link-active-color:     @component-active-color;
+@dropdown-link-active-bg:        @component-active-bg;
+
+@dropdown-link-disabled-color:   @gray-light;
+
+@dropdown-header-color:          @gray-light;
+
+
+// Pagination
+// -------------------------
+@pagination-color:                     @link-color;
+@pagination-bg:                        #F2F2F2;
+@pagination-border:                    #fff;
+
+@pagination-hover-color:               #fff;
+@pagination-hover-bg:                  @brand-alt;
+@pagination-hover-border:              @brand-alt;
+
+@pagination-active-color:              #fff;
+@pagination-active-bg:                 @brand-primary;
+@pagination-active-border:             @brand-primary;
+
+@pagination-disabled-color:            @gray-light;
+@pagination-disabled-bg:               #F2F2F2;
+@pagination-disabled-border:           #fff;
+
+
+// Modals
+// -------------------------
+// @modal-content-bg:                             darken(@brand-alt, 20%);
+// @modal-content-border-color:                   @brand-alt;
+// @modal-content-fallback-border-color:          darken(@brand-alt, 5%);
+
+// @modal-backdrop-bg:           #000;
+// @modal-header-border-color:   darken(@brand-alt, 20%);
+// @modal-footer-border-color:   darken(@brand-alt, 20%);
+
+
+// Thumbnails
+// -------------------------
+@thumbnail-padding:           0;
+@thumbnail-bg:                #eee;
+@thumbnail-border-radius:     0;
+
+
+// Code
+// ------------------------
+@code-color:                  #c7254e;
+@code-bg:                     @brand-alt;
+
+@pre-bg:                      #222;
+@pre-color:                   #888;
+@pre-border-color:            #222;
+@pre-scrollable-max-height:   340px;
+
+
+// Form states and alerts
+// -------------------------
+
+@state-info-text:                @text-color;
+@state-info-bg:                  darken(@brand-alt, 20%);
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+
+// Custom
+// -------------------------
+
+@social-icon-size:            20px;
+@social-icon-big-size:        30px;

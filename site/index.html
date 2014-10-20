@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Free and open source Hi-Fi music player for embedded hardware.">
+        
+        <link rel="canonical" href="http://www.runeaudio.com/">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+        <title>RuneAudio</title>
+
+        <link href="./css/bootstrap-3.0.3.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/prettify-1.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".">RuneAudio</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a rel="prev" >
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/RuneAudio/Docs.git">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#runeaudio-documentation">RuneAudio documentation</a></li>
+        
+            <li><a href="#quick-start-guide">Quick start guide</a></li>
+        
+            <li><a href="#player-setup">Player setup</a></li>
+        
+            <li><a href="#advanced-users">Advanced users</a></li>
+        
+            <li><a href="#more-help">More help</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="runeaudio-documentation">RuneAudio documentation</h1>
+<h2 id="quick-start-guide">Quick start guide</h2>
+<p><strong>WORK IN PROGRESS</strong> &#8211; This guide is under construction and the information in it could be incomplete. We apologize for the inconvenience. <a href="http://www.runeaudio.com/forum/improve-the-docs-t332.html" title="RuneAudio Forum">Want to help us?</a></p>
+<p>This guide assumes that you already own <a href="http://www.runeaudio.com/certified-devices/" title="Certified devices">a certified device</a> on which to run RuneAudio, and an SD card (at least 4GB) on which to write the image file.</p>
+<h3 id="download-and-extract">Download and extract</h3>
+<p>Download the latest RuneAudio image released for your device.</p>
+<p><a href="http://www.runeaudio.com/download/" title="Download">[Go to the download page]</a></p>
+<p>Once the download is completed, extract the contents of the .zip file with a compressed file manipulation utility (e.g.: <a href="http://www.7-zip.org/download.html">7-Zip</a> on Windows, <a href="http://www.zipeg.com/">Zipeg</a> on Mac, <a href="http://linux.about.com/od/commands/l/blcmdl1_unzip.htm">Unzip</a> on Linux). You will now have an <strong>.img</strong> (raw disk image) file.</p>
+<h3 id="prepare-the-sd-card">Prepare the SD card</h3>
+<p>Write the extracted .img file to your SD card, following the instruction in one of the following guides (these are Raspberry Pi specific guides, but the SD write process is the same for all platforms):</p>
+<ul>
+<li><a href="http://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Win32DiskImager_program">(Windows) HowTo</a></li>
+<li><a href="http://elinux.org/RPi_Easy_SD_Card_Setup#Run_an_App_.28Only_with_graphical_interface.29">(Mac) HowTo</a></li>
+<li><a href="http://elinux.org/RPi_Easy_SD_Card_Setup#Using_ImageWriter_.28graphical_interface.29">(Linux) HowTo</a></li>
+</ul>
+<p>When the write process has finished, safely unmount the SD card and plug it into your device.</p>
+<p><strong>Make sure your SD card is not <a href="http://kb.sandisk.com/app/answers/detail/a_id/1102/~/memory-card-is-write-protected-or-locked">write protected</a> before writing the image to it, and before plugging it into your device.</strong></p>
+<h3 id="prepare-the-device">Prepare the device</h3>
+<ol>
+<li>If you have a USB DAC plug it into a USB port, otherwise just plug in the analog jack;</li>
+<li>If you have a USB storage device, plug it into a USB port. If you intend to use a USB hard drive the use of an external power supply (if available), or at least a USB powered hub, is highly recommended;</li>
+<li>Plug in your ethernet connector;</li>
+<li>Plug the PSU to the device;</li>
+<li>Power the device on.</li>
+</ol>
+<p>RuneAudio will now boot on your device for the first time, acquiring an IP address (with enabled DHCP on your LAN).</p>
+<h2 id="player-setup">Player setup</h2>
+<h3 id="the-web-interface-wzxhzdk2-runeui">The web interface &#8211; RuneUI</h3>
+<p>RuneAudio comes with its web interface, <strong><a href="http://www.runeaudio.com/about/#runeui" title="RuneUI">RuneUI</a></strong>, which permits you to browse your music library, control the playback and to configure the player. It works on any device and virtually any platform. It is designed to be easy to use and intuitive.</p>
+<h3 id="accessing-the-runeui">Accessing the RuneUI</h3>
+<p>You can connect to the RuneUI in several ways:</p>
+<ul>
+<li>(Windows) open the following address in your browser: <a href="http://runeaudio">http://runeaudio</a> or <a href="http://runeaudio.">http://runeaudio.</a> (works if an <a href="http://en.wikipedia.org/wiki/Avahi_%28software%29" title="Avahi">Avahi</a>/<a href="http://en.wikipedia.org/wiki/Bonjour_%28software%29" title="Bonjour">Bonjour</a> client is installed)
+ (OSX / Linux / Android) open the following address in your browser: <a href="http://runeaudio.local">http://runeaudio.local</a></li>
+<li>If you cannot connect using the abovementioned addresses, look up the IP address of your device (check your routers DHCP list) and point your browser to it (e.g. <a href="http://192.168.1.xxx/">http://192.168.1.xxx</a>)</li>
+<li>(Windows) you should find a new icon under <em>My Network Places</em>, called <em>RuneAudio</em>: double click it to open you the RuneUI in your default browser, or place a shortcut to the RuneUI on your desktop, which can then be double clicked to open the RuneUI.</li>
+</ul>
+<h3 id="database-configuration">Database configuration</h3>
+<pre class="prettyprint well"><code>MENU &gt; Database
+</code></pre>
+<p>RuneAudio scans your digital music library and stores all information in an internal database.
+Before it can do this, you need to tell it where your digital music is located.</p>
+<p>Local USB storage drives are automatically detected. If you connect an USB drive and nothing happens, manually update the DB clicking on <strong>UPDATE MPD DATABASE</strong> button.</p>
+<p>Network attached storages (NAS) can be added via Samba/NFS. To add a network source, click on the <strong>ADD NEW MOUNT</strong> button and fill in the form in the next screen. After saving the mount, it will be displayed in the configured network mounts list. A green check will appear on it if the source is successfully mounted.</p>
+<h2 id="advanced-users">Advanced users</h2>
+<p><strong>Make sure you are completely confident and that you know what you are doing before fiddling about, as you could mess things up. Alteration of the configuration might result in you having to reimage your SD card and start again.</strong></p>
+<p>Due to the integrated nature of the system (and the strong interaction between RuneUI and RuneOS), the manual editing of the system configuration files is not recommended, as they are periodically written by the RuneUI PHP worker. Please understand this behaviour before complaining about any malfunctions which may occur as a result of any manual modification.</p>
+<p>If you have confidence in your skills, these are the root credentials for advanced users who want command line access are:</p>
+<pre class="prettyprint well"><code>user: root
+password: rune
+</code></pre>
+<h2 id="more-help">More help</h2>
+<p>Didn&#8217;t find here the information you were looking for here?
+ Feel free to browse through the forum for answers, and to post in the forum to ask for help if you cannot find a solution:</p>
+<p><a href="http://www.runeaudio.com/forum/" title="RuneAudio Forum">[Go to the forum]</a></p>
+</div>
+        </div>
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/prettify-1.0.min.js"></script>
+        <script src="./js/base.js"></script>
+    </body>
+</html>

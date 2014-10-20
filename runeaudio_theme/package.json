@@ -1,0 +1,29 @@
+{
+  "name": "RuneAudio",
+  "version": "1.0.0",
+  "author": "Andrea Coiutti <acx@runeaudio.com>",
+  "homepage": "http://www.runeaudio.com",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RuneAudio/Docs.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/RuneAudio/Docs/issues"
+  },
+  "licenses": [{
+    "type": "GPL-3.0",
+    "url": "http://opensource.org/licenses/GPL-3.0"
+  }],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-less": "~0.8.1"
+  },
+  "private": true
+}

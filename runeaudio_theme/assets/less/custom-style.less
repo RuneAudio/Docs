@@ -1,0 +1,107 @@
+/* Generals
+-------------------------------------------------------------- */
+
+.floatleft { float: left; }
+.floatright { float: right; }
+.clear { clear: both; }
+.justified { text-align: justify; }
+.mid { margin-bottom: -3px; }
+.rel { position: relative; }
+.rbg { background: #ff0000; }
+.gbg { background: #00ff00; }
+.bbg { background: #0000ff; }
+.txtsx { text-align: left; }
+.txtdx { text-align: right; }
+.txtmid { text-align: center; }
+i.sx { margin-right: 5px; }
+i.dx { margin-left: 5px; }
+
+
+
+/* Struttura
+-------------------------------------------------------------- */
+
+body {
+	padding: @navbar-height 0 30px;
+}
+
+
+
+/* Header
+-------------------------------------------------------------- */
+
+.navbar-brand {
+    line-height: @navbar-height;
+    padding: 0 15px;
+	img {
+		margin: -4px 0 0 3px;
+	}
+}
+
+
+
+/* Sidebar
+-------------------------------------------------------------- */
+
+.bs-sidenav {
+	margin-top: 26px;
+	& > li > a {
+		padding: 5px 15px;
+	}
+	& > li.active > a {
+		font-weight: bold;
+		color: #fff;
+	}
+	& > li > a:hover,
+	& > li > a:focus {
+		background: #222;
+		color: #fff;
+	}
+}
+
+
+
+/* Footer
+-------------------------------------------------------------- */
+
+
+/* Content
+-------------------------------------------------------------- */
+
+h1, h2 {
+	text-transform: uppercase;
+}
+
+
+
+/* Media Queries
+-------------------------------------------------------------- */
+
+// sotto i 480px
+@media (max-width: 479px) {
+
+}
+// sopra i 480px
+@media (min-width: 480px) {
+
+}
+// sotto i 768px
+@media (max-width: @screen-sm) {
+
+}
+// sopra i 768px
+@media (min-width: @grid-float-breakpoint) {
+
+}
+// fra 768px e 979px
+@media (min-width: @screen-sm) and (max-width: @screen-md) { 
+
+}
+// fra 992px e 1200px
+@media (min-width: @screen-md) and (max-width: @screen-lg) { 
+
+}
+// sopra i 1200px
+@media (min-width: @screen-lg) {
+
+}
