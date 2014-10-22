@@ -73,4 +73,17 @@ jQuery(document).ready(function ($) { 'use strict';
 		sidebarResize();
 	});
 	
+	// edit page on GitHub link
+	var canonical = $('link[rel=canonical]').attr('href');
+	if (canonical === 'http://www.runeaudio.com/documentation/') {
+		// documentation home page
+		canonical = 'https://github.com/RuneAudio/Docs/blob/master/docs/index.md';
+	} else {
+		// other pages
+		canonical = canonical.replace('http://www.runeaudio.com/docs/', 'https://github.com/RuneAudio/Docs/blob/master/docs/');
+		canonical = canonical.slice(0,-1);
+		canonical += '.md';
+	}
+	$('#contribute-edit').attr('href', canonical);
+	
 }); //]]>

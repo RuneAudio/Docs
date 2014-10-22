@@ -1,6 +1,6 @@
 site_name: RuneAudio
-site_url: http://www.runeaudio.com/
-site_description: 'Free and open source Hi-Fi music player for embedded hardware.'
+site_url: http://www.runeaudio.com/documentation/
+site_description: 'RuneAudio documentation - Free and open source Hi-Fi music player for embedded hardware.'
 site_author: 'Andrea Coiutti (ACX)'
 site_favicon: favicon.ico
 repo_url: https://github.com/RuneAudio/Docs/
