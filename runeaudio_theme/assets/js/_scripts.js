@@ -80,7 +80,7 @@ jQuery(document).ready(function ($) { 'use strict';
 		canonical = 'https://github.com/RuneAudio/Docs/blob/master/docs/index.md';
 	} else {
 		// other pages
-		canonical = canonical.replace('http://www.runeaudio.com/docs/', 'https://github.com/RuneAudio/Docs/blob/master/docs/');
+		canonical = canonical.replace('http://www.runeaudio.com/documentation/', 'https://github.com/RuneAudio/Docs/blob/master/docs/');
 		canonical = canonical.slice(0,-1);
 		canonical += '.md';
 	}
