@@ -43,4 +43,4 @@ Some useful resources which make easier to contribute to write and mantain it:
 - [Markdown syntax](http://daringfireball.net/projects/markdown/syntax) - official syntax reference
 - [Markdown help](http://stackoverflow.com/editing-help) - syntax hints from Stack Overflow
 - [to-markdown](http://domchristie.github.io/to-markdown/) - online HTML to Markdown converter
-- [StackEdit](http://domchristie.github.io/to-markdown/) - WYSIWYG Markdown editor
+- [StackEdit](https://stackedit.io/editor) - WYSIWYG Markdown editor
