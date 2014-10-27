@@ -13,6 +13,7 @@ pages:
 - ['quick-start\sd-card-setup-windows.md', 'Quick start', 'Flashing the SD Card using Windows']
 - ['quick-start\sd-card-setup-mac.md', 'Quick start', 'Flashing the SD Card using Mac']
 - ['quick-start\sd-card-setup-linux.md', 'Quick start', 'Flashing the SD Card using Linux']
+- ['quick-start\rpi-hardware-setup.md', 'Quick start', 'Raspberry Pi hardware setup']
 - ['runeui\runeui.md', 'RuneUI', 'RuneUI']
 - ['runeui\playback.md', 'RuneUI', 'Playback']
 - ['runeui\sources.md', 'RuneUI', 'Sources']
