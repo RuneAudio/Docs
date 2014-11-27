@@ -4,18 +4,19 @@
 
 The MPD screen is the main configuration page for the Music Player Daemon (MPD), the system responsible for audio playback. A link ("reset to default”) is provided at the top of this screen to reset everything to the default settings.
 
-Audio output
+## Audio output
 
 The first option is for selecting the Audio Output Interface. The choices here will change depending upon the various "sound cards” you have available to your system. Typically, this list will contain all of the output devices native to your hardware, as well as any USB DACs you have connected. In some cases, namely when you configure an I2S DAC Driver on the Settings screen, an I2S Output will be available for selection.
 
-Volume control
+## Volume control
 
 There are 3 options available for volume control.
+
 - The "disabled” option disables the volume control on the Playback tab, meaning you will need to use a pre-amp or other external volume control. This often provides the best sonic performance.
 - The "enabled – software” option enables an internal software mixer that allows you to adjust the playback volume on the Playback tab. Doing so alters the bits being sent to your DAC (or the internal DAC chip if you have selected an internal sound card for playback). Altering the bits means the music you are listening to is no longer "bit perfect.” Software algorithms for volume control use dithering, a way of "guessing” at the data which can be quite accurate. What this means is that software volume control can sound quite good, especially compared to a poorly implemented analog volume control.
 - Finally, "enabled – hardware” allows for changing the volume through the actual soundcard’s driver, if this feature is implemented by your chosen Audio Output Interface.
 
-General music daemon options
+## General music daemon options
 
 The default port for MPD is 6600. If you want to use a third-party device or software to control playback, you will need to connect to MPD on your Rune device using this port.
 
