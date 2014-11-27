@@ -1,4 +1,4 @@
-# Playback
+Ôªø# Playback
 
 #### Menu > Playback
 
@@ -6,9 +6,9 @@ The Playback section has 3 tabs, located at the bottom of your screen. The tabs 
 
 Library Tab
 
-The Library tab provides access to your music library. You can quickly access your music from various places. By default, there are 6 buttons here. ìNetwork mountsî provides access to storage media connected to your network, typically referred to as Network Attached Storage (NAS). ìUSB Storageî contain lists of content stored on a USB drive connected directly to your system. ìMy Webradiosî allows you to maintain a list of web based radio stations by adding the name and URL for the feed to Rune. ìSpotifyî provides access to your Spotify online account. ìDirbleî provides easy access to thousands of online radio stations. ìJamendoî provides access to Jamendo, a music website and an open community of music authors. It bills itself as "the world's largest digital service for free music". You can also add music folders to this list (See Add bookmark below).
+The Library tab provides access to your music library. You can quickly access your music from various places. By default, there are 6 buttons here. ‚ÄúNetwork mounts‚Äù provides access to storage media connected to your network, typically referred to as Network Attached Storage (NAS). ‚ÄúUSB Storage‚Äù contain lists of content stored on a USB drive connected directly to your system. ‚ÄúMy Webradios‚Äù allows you to maintain a list of web based radio stations by adding the name and URL for the feed to Rune. ‚ÄúSpotify‚Äù provides access to your Spotify online account. ‚ÄúDirble‚Äù provides easy access to thousands of online radio stations. ‚ÄúJamendo‚Äù provides access to Jamendo, a music website and an open community of music authors. It bills itself as "the world's largest digital service for free music". You can also add music folders to this list (See Add bookmark below).
 
-Upon pressing the button, you have a ìbackî button and search bar at the top of the screen. Below that is a list of your NAS mounts (added in Sources menu item). At the bottom of the screen are up and down arrows, letting you navigate through your library, to the top, the bottom, or one page at a time. 
+Upon pressing the button, you have a ‚Äúback‚Äù button and search bar at the top of the screen. Below that is a list of your NAS mounts (added in Sources menu item). At the bottom of the screen are up and down arrows, letting you navigate through your library, to the top, the bottom, or one page at a time. 
 
 Pressing an item in the list performs a command, depending on the type of item. For folders, it opens the folder. For tracks, it highlights the track. Double clicking a track adds it to the bottom of the queue, and immediately plays it. Clicking the 3 horizontal line icon (Actions) presents options depending on the type of item. For folders, the options are: Add, Add and play, Add replace and play, Update this folder and Save as bookmark. For files, the options are: Add, Add and play, Add replace and play.
 
@@ -30,6 +30,6 @@ On the right are the Volume Controls. The main graphical control represents the 
 
 Queue Tab
 
-The Queue tab displays the tracks that are in the current playlist, or queue. A search box at the top of the screen filters the contents of the queue list for those tracks that match the search terms you type. Pressing an item in the Queue listing plays that item. Pressing the ìxî icon on the far right removes the item from the Queue. At the bottom left of the screen are 3 additional items. The ìdocumentî icon navigates you to the manage playlists screen. The ìfloppy diskî icon allows you to save the current Queue as a named playlist. Simply enter a name and click ìSave playlistî to create a new playlist form the existing queue. The ìtrash canî icon prompts you to clear the contents of the current queue.
+The Queue tab displays the tracks that are in the current playlist, or queue. A search box at the top of the screen filters the contents of the queue list for those tracks that match the search terms you type. Pressing an item in the Queue listing plays that item. Pressing the ‚Äúx‚Äù icon on the far right removes the item from the Queue. At the bottom left of the screen are 3 additional items. The ‚Äúdocument‚Äù icon navigates you to the manage playlists screen. The ‚Äúfloppy disk‚Äù icon allows you to save the current Queue as a named playlist. Simply enter a name and click ‚ÄúSave playlist‚Äù to create a new playlist form the existing queue. The ‚Äútrash can‚Äù icon prompts you to clear the contents of the current queue.
 
 
