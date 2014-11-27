@@ -18,11 +18,11 @@ There are 3 options available for volume control.
 
 ## General music daemon options
 
-### Port
+#### Port
 
 The default port for MPD is 6600. If you want to use a third-party device or software to control playback, you will need to connect to MPD on your Rune device using this port.
 
-### Daemon user : group
+#### Daemon user : group
 
 You can choose which user account on your device you would like to run MPD as using the Daemon user : group selection.
 
@@ -34,17 +34,31 @@ Log level allows you to control how much data is logged while running MPD. This 
 
 State file specifies if a state file is used. If the state file is active, the state of MPD will be saved when MPD is terminated by a TERM signal or by the "kill" command. When MPD is restarted, it will read the state file and restore the state of MPD (including the playlist).
 
+#### FFmpeg decoder plugin
+
 The FFmpeg decoder setting should be set to enabled if you require AAC / ALAC support. Doing so may slow down the performance of an MPD database refresh.
+
+#### FFmpeg decoder plugin
 
 Gapless MP3 playback allows you to enable gapless mode while playing MP3s. However, if you have problems with your MP3s ending abruptly, it is recommended that you set this argument to "disabled" to attempt to fix the problem. [NOTE: If this solves the problem, it is highly recommended to fix the MP3 files with vbrfix (available as vbrfix in the debian archive), at which point gapless MP3 playback can be enabled.]
 
+#### FFmpeg decoder plugin
+
 DSD Support enables and disables support for playing DSD Audio.
+
+#### Volume normalization
 
 Volume normalization is a feature that instructs MPD to attempt to play back all audio files at a consistent volume level. This is great for parties or other situations where your music serves as background. With it off, some tracks may play substantially louder than others. NOTE: Enabling this feature means your audio will no longer be bit perfect.
 
+#### Audio buffer size
+
 Audio buffer size manages the size of the playback buffer. The default is 2048, large enough for nearly 12 seconds of CD-quality audio. Lower values can produce sonic benefits, but can also introduce skips and pops.
 
+#### Buffer before play
+
 Buffer before play specifies how much of the audio buffer should be filled before playing a song. Try increasing this setting if you hear skipping when manually changing songs. The default is 10%, a little over 1 second of CD-quality audio with the default buffer size.
+
+#### Auto update
 
 Auto update controls MPD automatically updating the music database when files in the music directory are changed.
 
