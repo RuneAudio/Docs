@@ -1,6 +1,6 @@
 # Playback
 
-#### Menu > Playback
+> [MENU] Menu > Playback
 
 The Playback section has 3 tabs, located at the bottom of your screen. The tabs are: Library, Playback and Queue.
 

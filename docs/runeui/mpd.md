@@ -1,6 +1,6 @@
 # MPD
 
-#### Menu > MPD
+> [MENU] Menu > MPD
 
 The MPD screen is the main configuration page for the Music Player Daemon (MPD), the system responsible for audio playback. A link ("reset to default") is provided at the top of this screen to reset everything to the default settings.
 

@@ -1,6 +1,6 @@
 # Debug
 
-#### Menu > Debug
+> [MENU] Menu > Debug
 
 The Debug Data screen provides information about the current state of your system that may help diagnose problems.
 

@@ -61,6 +61,9 @@ jQuery(document).ready(function ($) { 'use strict';
 	$('blockquote:contains("[WARNING]")').addClass('alert alert-warning').html(function(){
 		return $(this).find('p').html().substring(10);
 	});
+    $('blockquote:contains("[MENU]")').addClass('alert alert-menu').html(function(){
+		return $(this).find('p').html().substring(7);
+	});
 	
 	// set width of the parent div
 	function sidebarResize() {

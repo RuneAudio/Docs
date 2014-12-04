@@ -1,6 +1,6 @@
 # Settings
 
-#### Menu > Settings
+> [MENU] Menu > Settings
 
 The Settings screen provides a means of managing the settings for your Rune device.
 

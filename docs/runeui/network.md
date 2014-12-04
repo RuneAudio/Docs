@@ -1,6 +1,6 @@
 # RuneUI
 
-#### Menu > Network
+> [MENU] Menu > Network
 
 The Network configuration screen provides a means of configuring your network connections, both Ethernet and Wireless (WiFi).
 
