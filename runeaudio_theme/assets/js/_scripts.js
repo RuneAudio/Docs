@@ -9,13 +9,18 @@ jQuery(document).ready(function ($) { 'use strict';
 	prettyPrint();
 
 	/* Scrollspy */
-	var navHeight = $('.navbar').outerHeight(true) + 10;
-
+	var navHeight = $('.navbar').outerHeight(true);
 	$('body').scrollspy({
 		target: '.bs-sidebar',
-		offset: navHeight
+		offset: navHeight +50
 	});
 
+    $('.bs-sidebar a').click(function(event){
+        event.preventDefault();
+        var link = $(this).attr('href');
+        var posi = $(link).offset().top - navHeight;
+        $('body, html').animate({ scrollTop: posi }, 700);
+    });
 
 	/* Prevent disabled links from causing a page reload */
 	$('li.disabled a').click(function() {
