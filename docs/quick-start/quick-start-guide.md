@@ -12,7 +12,7 @@ Once the download is completed, extract the contents of the .zip file with a com
 
 ## Prepare the SD card
 
-Write the extracted .img file to your SD card, following the instruction in one of the following guides (these are Raspberry Pi specific guides, but the SD write process is the same for all platforms):
+Write the extracted .img file to your SD card, following the instruction in one of the following guides:
 
 *   [Flashing the SD Card using Windows](../quick-start/sd-card-setup-windows.md)
 *   [Flashing the SD Card using Mac](../quick-start/sd-card-setup-mac.md)
