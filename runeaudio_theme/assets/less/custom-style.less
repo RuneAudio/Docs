@@ -208,6 +208,7 @@ strong {
 -------------------------------------------------------------- */
 
 pre, .alert, .alert-danger, .alert-success, .alert-info, .alert-warning {
+    margin-bottom: 15px;
     padding: 15px;
 	background-color: #222;
     border: none;
@@ -234,6 +235,12 @@ pre, .alert, .alert-danger, .alert-success, .alert-info, .alert-warning {
 }
 code {
     margin: 0 2px;
+}
+pre.well code {
+    font-size: 90%;
+    .com, .lit, .pun, .opn, .clo, .fun, .str, .atv, .kwd, .prettyprint .tag, .typ, .atn, .dec, .var, .pln {
+        color: inherit;
+    }
 }
 
 
