@@ -2,41 +2,62 @@
 
 > [INFO] This part of the guide assumes that you already have [downloaded and extracted](../quick-start/quick-start-guide.md#download-and-extract) the image file
 
-Make sure your SD card is inserted in on of the slot of your MAC (through USB or directly in the SD slot if you have one)
-Then launch a *terminal* window on your Mac and enter the following command:
-<pre>diskutil list</pre>
-this command will list all the disks that are attached to your MAC. The outpu will look something like this:
-<pre>
-/dev/disk0
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *500.3 GB   disk0
-   1:                        EFI EFI                     209.7 MB   disk0s1
-   2:          Apple_CoreStorage                         499.4 GB   disk0s2
-   3:                 Apple_Boot Boot OS X               134.2 MB   disk0s3
-/dev/disk1
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:                  Apple_HFS Macintosh HD           *499.1 GB   disk1
-/dev/disk2
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:     FDisk_partition_scheme                        *7.9 GB     disk2
-   1:                 DOS_FAT_32 CANAKIT                 7.9 GB     disk2s1
-   </pre>
-<p>Find the one that corresponds to your SD card. In the previous example, it's /dev/disk2. Hint: you can look at the sizes.. 
-<p>Now we cannot flash the card without unmounting it first. To do tha launch the *Disk Utility* tool and unmount the SD Card. Do NOT eject it, simply unmount it with a right-click. You can also unmount the disk manually on the prompt by typing:
-<pre>diskutil unmount /dev/disk2</pre>
-<p>Now we will image the SD but be VERY CAREFUL, the *dd* command can scratch your main disk entirely if you put the wrong number, so check twice!!
-<p><pre>dd if=/Users/antonypa/Desktop/RuneAudio_rpi_0.3-beta_20141029_2GB.img of=/dev/disk2</pre>
-<p>if you get the following message (very likely)
-<pre>dd: /dev/disk2: Permission denied</pre>
-<p>just add *sudo* in front of the command which will prompt for your machine's password. 
-<p><pre>sudo dd if=/Users/antonypa/Desktop/RuneAudio_rpi_0.3-beta_20141029_2GB.img of=/dev/disk2</pre>
-<p>then wait.. nothing will happen for a while. Be patient.. The flashing IS happening.
-<p>patience..
-<p>patience..
-<p>go get a coffee or something. It can take several minutes.
-<p>When the prompt comes back it should be done.
-<p>It is possible that you get the following error:
-<p>
-<p>This help has been greatly (f not almot entirely) inspired by the Installing OpenElec Help guide.
+First of all, make sure your SD card is inserted in one of the slots of your Mac (in an USB card reader or directly in the integrated SD card reader slot, if your device has it).
 
-*Take inspiration from [this resource](http://elinux.org/RPi_Easy_SD_Card_Setup#Flashing_the_SD_card_using_Mac_OSX) for the contents.*
+Next step is to launch a *terminal* window on your Mac and enter the following command:
+
+`diskutil list`
+
+which will list all the disks that are attached to your MAC.  
+The resulting output will look something like this:
+
+    /dev/disk0
+       #:                       TYPE NAME                    SIZE       IDENTIFIER
+       0:      GUID_partition_scheme                        *500.3 GB   disk0
+       1:                        EFI EFI                     209.7 MB   disk0s1
+       2:          Apple_CoreStorage                         499.4 GB   disk0s2
+       3:                 Apple_Boot Boot OS X               134.2 MB   disk0s3
+    /dev/disk1
+       #:                       TYPE NAME                    SIZE       IDENTIFIER
+       0:                  Apple_HFS Macintosh HD           *499.1 GB   disk1
+    /dev/disk2
+       #:                       TYPE NAME                    SIZE       IDENTIFIER
+       0:     FDisk_partition_scheme                        *7.9 GB     disk2
+       1:                 DOS_FAT_32 CANAKIT                 7.9 GB     disk2s1
+
+Find the unit name that corresponds to your SD card (looking at the sizes of the drives will help you to identify yhe right one). 
+In the previous example, it's `/dev/disk2`.
+
+Before proceeding with the flash of the SD card, it's required to unmount it first. To do that, launch the **Disk Utility** tool and unmount the SD Card.
+Do NOT eject it, simply unmount it with a right-click.  
+In alternative, you can also unmount the disk manually on the prompt by typing:
+
+`diskutil unmount /dev/disk2`
+
+> [WARNING] **Double-check your card's drive letter!** Choosing the wrong drive will likely result in data loss or even worse harm to your computer.
+
+To write the image the SD card, the command syntax is:
+
+`dd if=[source] of=[destination]`
+
+so a real example of the command is:
+
+`dd if=/Users/antonypa/Desktop/RuneAudio_rpi_0.3-beta_20141029_2GB.img of=/dev/disk2`
+
+if you get the following message (very likely):
+
+`dd: /dev/disk2: Permission denied`
+
+just add *sudo* in front of the command which will prompt for your machine's password.
+ 
+`sudo dd if=/Users/antonypa/Desktop/RuneAudio_rpi_0.3-beta_20141029_2GB.img of=/dev/disk2`
+
+After launching the command you should wait for the flashing process to complete. It can take several minutes, and you'll know that it has ended when the prompt comes back with no errors.
+
+***
+
+Ready to get listening? Let's [plug stuff in!](http://www.runeaudio.com/documentation/quick-start/quick-start-guide/#prepare-the-device)
+
+Having Issues? Head on over to [Troubleshooting](http://www.runeaudio.com/documentation/troubleshooting/common-troubleshooting/) for some help.
+
+*This guide has been greatly (if not almot entirely) inspired by the "Installing OpenELEC Help" guide.*
