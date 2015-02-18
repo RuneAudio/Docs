@@ -38,7 +38,7 @@ RuneAudio will now boot on your device for the first time, acquiring an IP addre
 
 RuneAudio comes with its web interface, **[RuneUI](http://www.runeaudio.com/about/#runeui "RuneUI")**, which permits you to browse your music library, control the playback and to configure the player. It works on any device and virtually any platform. It is designed to be easy to use and intuitive.
 
-More detailed informations in the dedicated section:
+More detailed information in the dedicated section:
 
 [[ RuneUI ]](../runeui/runeui.md)
 
@@ -58,11 +58,11 @@ You can connect to the RuneUI in several ways:
 RuneAudio scans your digital music library and stores all information in an internal database.
 Before it can do this, you need to tell it where your digital music is located.
 
-Local USB storage drives are automatically detected. If you connect an USB drive and nothing happens, manually update the DB clicking on **UPDATE MPD DATABASE** button.
+Local USB storage drives are automatically detected. If you connect an USB drive and nothing happens, manually update the DB by clicking on **UPDATE MPD DATABASE** button.
 
-Network attached storages (NAS) can be added via Samba/NFS. To add a network source, click on the **ADD NEW MOUNT** button and fill in the form in the next screen. After saving the mount, it will be displayed in the configured network mounts list. A green check will appear on it if the source is successfully mounted.
+Network attached storage (NAS) drives can be added via Samba/NFS. To add a network source, click on the **ADD NEW MOUNT** button and fill in the form in the next screen. After saving the mount, it will be displayed in the configured network mounts list. A green check will appear on it if the source is successfully mounted.
 
-More detailed informations in the dedicated section:
+More detailed information in the dedicated section:
 
 [[ Sources ]](../runeui/sources.md)
 
@@ -72,14 +72,14 @@ More detailed informations in the dedicated section:
 
 Due to the integrated nature of the system (and the strong interaction between RuneUI and RuneOS), the manual editing of the system configuration files is not recommended, as they are periodically written by the RuneUI PHP worker. Please understand this behaviour before complaining about any malfunctions which may occur as a result of any manual modification.
 
-If you have confidence in your skills, these are the root credentials for advanced users who want command line access are:
+If you have confidence in your skills, these are the root credentials for advanced users who want command line access:
 
     user: root
     password: rune
 
 ## More help
 
-Didn&#8217;t find here the information you were looking for here?
+Didn&#8217;t find the information you were looking for here?
  Feel free to browse through the forum for answers, and to post in the forum to ask for help if you cannot find a solution:
 
 [[ Go to the forum ]](http://www.runeaudio.com/forum/ "RuneAudio Forum")
