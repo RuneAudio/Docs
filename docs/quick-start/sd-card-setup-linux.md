@@ -6,7 +6,7 @@
 
 The SD card will be the home for your unit's Operating System. This installation will flash the RuneOS onto the card, along with formatting the card to a bootable state. This is different than copying the image onto the drive, but similar and almost as easy.
 
-> [INFO] You are encouraged to remove all other USB devices at this time to avoid confusion during flashing.
+> [INFO] We recommend removing all other USB devices at this time to avoid confusion during flashing.
 
 ## Procedure using ImageWriter (graphical interface)
 

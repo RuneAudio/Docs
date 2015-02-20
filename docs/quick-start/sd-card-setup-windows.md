@@ -1,12 +1,12 @@
 # Flashing the SD Card using Windows
 
-> [INFO] This part of the guide assumes that you already done the first part of the [Quick start guide](quick-start-guide.md).
+> [INFO] This part of the guide assumes that you already followed the first part of the [Quick start guide](quick-start-guide.md).
 
 ## Intro
 
 The SD card will be the home for your unit's Operating System. This installation will flash the RuneOS onto the card, along with formatting the card to a bootable state. This is different than copying the image onto the drive, but similar and almost as easy.
 
-> [INFO] You are encouraged to remove all other USB devices at this time to avoid confusion during flashing.
+> [INFO] We recommend removing all other USB devices at this time to avoid confusion during flashing.
 
 ## Procedure using USB Image Tool
 
@@ -32,7 +32,7 @@ The SD card will be the home for your unit's Operating System. This installation
  - Download and install the latest version of [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/).
  - Insert your card into the card reader, the card reader into your USB port, and check which drive letter it has been assigned.
  - Run Win32DiskWriter (your computer may ask you to agree to run the program - click *Yes*).
- - Click the file icon and browse to your RuneOS image file.  
+ - Click the folder icon and browse to your RuneOS image file.  
 
  ![Win32DiskWriter](https://lh5.googleusercontent.com/-GnGpJcdFTLc/VEsuN89OkOI/AAAAAAAAAGA/-n57YFMH7EU/s0/W32DI.png "W32DI.png")
 
@@ -52,4 +52,4 @@ Having Issues? Head on over to [Troubleshooting](http://www.runeaudio.com/docume
 
 ## Notes
 
-Larger cards, once written, will only show ~2GB worth of space, taken up by the file system. This is simply because RuneAudio, operates on a file format not visible in Windows.
+Larger cards, once written, will only show ~2GB worth of space, taken up by the file system. This is simply because RuneAudio uses a file format which is not visible in Windows.
