@@ -39,7 +39,7 @@ Guest access allows you to connect to a shared folder without a username / passw
 
 #### Advanced Options
 
-This setting toggels the visibility of the advanced mount options.
+This setting toggles the visibility of the advanced mount options.
 
 ## Advanced Options
 
@@ -47,19 +47,19 @@ When enabled, additional settings are available for configuring your connection 
 
 #### Charset
 
-Change this settings if you experience problems with character encoding.
+Change this setting if you experience problems with character encoding.
 
 #### Rsize
 
-Change this settings if you experience problems with music playback (e.g. pops or clips).
+Change this setting if you experience problems with music playback (e.g. pops or clicks).
 
 #### Wsize
 
-Change this settings if you experience problems with music playback (e.g. pops or clips).
+Change this setting if you experience problems with music playback (e.g. pops or clicks).
 
 #### Mount flags
 
-You can configure advanced mount flags here. However, we suggest you don't use this field if you don't know what you are doing.
+You can configure advanced mount flags here. However, we suggest you don't use this field unless you know exactly what you are doing.
 
 
 ## USB
