@@ -2,7 +2,7 @@
 
 ## Introduction to the RuneUI
 
-RuneAudio features **RuneUI**, an unique integrated and easy to use interface.
+RuneAudio features **RuneUI**, a unique integrated and easy to use interface.
 
 ##### A web interface
 

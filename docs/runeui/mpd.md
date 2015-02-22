@@ -2,7 +2,7 @@
 
 > [MENU] Menu > MPD
 
-The MPD screen is the main configuration page for the Music Player Daemon (MPD), the system responsible for audio playback. A link ("reset to default") is provided at the top of this screen to reset everything to the default settings.
+The MPD screen is the main configuration page for the Music Player Daemon (MPD), the system responsible for audio playback. In case of any problems you can use the link provided at the top of this screen ("reset to default") to reset everything to the default settings.
 
 ## Audio output
 
@@ -28,7 +28,7 @@ You can choose which user account on your device you would like to run MPD as us
 
 #### Log level
 
-Log level allows you to control how much data is logged while running MPD. This can be useful for debugging and tracking down playback issues. This setting controls the type of information which is logged. Available setting arguments are "disabled", "default", "secure" or "verbose". The "verbose" setting argument is recommended for troubleshooting, though can quickly stretch available resources on limited hardware storage.
+Log level allows you to control how much data is logged while running MPD. This can be useful for debugging and tracking down playback issues. This setting controls the type of information which is logged. Available setting arguments are "disabled", "default", "secure" or "verbose". The "verbose" setting argument is recommended for troubleshooting, though it can quickly fill the available resources on limited hardware storage.
 
 #### State file
 
@@ -36,7 +36,7 @@ State file specifies if a state file is used. If the state file is active, the s
 
 #### FFmpeg decoder plugin
 
-The FFmpeg decoder setting should be set to enabled if you require AAC / ALAC support. Doing so may slow down the performance of an MPD database refresh.
+The FFmpeg decoder setting should be set to enabled if you require AAC / ALAC support. Doing so may slow down the performance of the MPD database refresh.
 
 #### FFmpeg decoder plugin
 
@@ -48,7 +48,7 @@ DSD Support enables and disables support for playing DSD Audio.
 
 #### Volume normalization
 
-Volume normalization is a feature that instructs MPD to attempt to play back all audio files at a consistent volume level. This is great for parties or other situations where your music serves as background. With it off, some tracks may play substantially louder than others. NOTE: Enabling this feature means your audio will no longer be bit perfect.
+Volume normalization is a feature that instructs MPD to attempt to play back all audio files at a consistent volume level. This is great for parties or other situations where your music serves as background. When this setting is turned off, some tracks may play substantially louder than others. NOTE: Enabling this feature means your audio will no longer be bit perfect.
 
 #### Audio buffer size
 
@@ -60,7 +60,7 @@ Buffer before play specifies how much of the audio buffer should be filled befor
 
 #### Auto update
 
-Auto update controls MPD automatically updating the music database when files in the music directory are changed.
+Auto update determines whether MPD will automatically update the music database when files in the music directory are changed.
 
-After making changes on this screen, press "Save and apply" to save the changes.
+After making any changes on this screen, press "Save and apply" to save the changes.
 

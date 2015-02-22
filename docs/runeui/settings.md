@@ -34,7 +34,7 @@ You can enable I²S output by selecting one of the available items in the list. 
 #### Sound Signature (optimization profiles)
 Each of the profiles includes a set of performance tweaks that act on specific system kernel parameters. They *are not* enabling Digital Signal Processing (DSP) nor any other sound effect - the output remains untouched (bit perfect). By applying settings that act on kernel latency parameters (and probably on the amount of overall jitter), we have found that each of these profiles introduces an audible impact on the overall sound quality.
 
-The actual sonic results vary depending on the other equipment in use in your system, as well as teh acoustic properties of the room itself. So, we invite you to experiment and ultimately choose a profile according to your personal taste. (If you can't hear any differences... don't worry, they are subtle. You are safe to stick to the default settings.)
+The actual sonic results vary depending on the other equipment in use in your system, as well as the acoustic properties of the room itself. So, we invite you to experiment and ultimately choose a profile according to your personal taste. (If you can't hear any differences... don't worry, they are subtle. You can safely use the default settings.)
 
 ## Features management
 You can Enable/Disable optional modules to best suit your needs. Disabling unused features will free system resources and might improve the overall performance. Enabling them allows you to use them. The choice is yours.
@@ -60,7 +60,7 @@ The UPnP / DLNA setting allows you to toggle the capability of receiving wireles
 
 #### USB Automount
 
-The USB Automount setting allows you to toggle the feature to automatically detect and mount connected USB Drives.
+The USB Automount setting allows you to toggle the feature to automatically detect and mount connected USB drives.
 
 #### Last.fm
 
@@ -77,5 +77,5 @@ This setting allows you to toggle the application of a fix for the *CM6631 recei
 
 The Backup feature makes a copy of your current settings. The restore feature allows you to easily apply those saved setting by either transferring them between multiple RuneAudio installations, or applying them to a new/upgrade installation.
 
-NOTE: restore feature will come in 0.4 release.
+NOTE: the restore feature will be available in 0.4 release.
 
