@@ -2,7 +2,7 @@
 
 ##Standard updates
 
-Major releases are distributed via []downloadable disk images](http://www.runeaudio.com/download/). In between major releases, we publish bugfixes and new features to [our official repository on GitHub](https://github.com/RuneAudio/RuneUI). They are located on the **main** branch (the production one). 
+Major releases are distributed via [downloadable disk images](http://www.runeaudio.com/download/). In between major releases, we publish bugfixes and new features to [our official repository on GitHub](https://github.com/RuneAudio/RuneUI). They are located on the **main** branch (the production one). 
 
 You can check for and install these updates from the UI:
 
