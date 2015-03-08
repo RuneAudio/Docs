@@ -2,40 +2,40 @@
 
 ##Standard updates
 
-Between major releases, which are distributed via disk images, new bugfixes or features are introduced and published on [our official repository on GitHub](https://github.com/RuneAudio/RuneUI), on the **main** branch (the production one).
+Major releases are distributed via []downloadable disk images](http://www.runeaudio.com/download/). In between major releases, we publish bugfixes and new features to [our official repository on GitHub](https://github.com/RuneAudio/RuneUI). They are located on the **main** branch (the production one). 
 
-You can check and get such incremental updates from the UI:
+You can check for and install these updates from the UI:
 
  1. go to the **dev section** of the UI, typing [http://runeaudio/dev](http://runeaudio/dev) or [http://runeaudio.local/dev](http://runeaudio.local/dev) in your browser
- 2. set the **Dev Mode** as **enabled**
+ 2. set the **Dev Mode** to **enabled**
  3. click the **gitpull** button (*Update RuneUI*)
- 4. hard refresh the cache of your browser
+ 4. hard refresh the cache of your browser (ctrl + F5)
 
-or in alternative from the terminal, typing this commands:
+Alternatively, you can do this from the terminal:
 
     cd /var/www
     git pull
 
-As final step, always remember to hard refresh the cache of your browser.
+As final step, always remember to hard refresh the cache of your browser. (ctrl + F5)
 
 ##Nightly builds
 
-Nightly builds are based on the latest development code, which means they may probably be unstable and not documented. As such, your mileage may vary.
+Nightly builds are based on the latest development code, which means they are probably unstable and definitely not documented. As such, your mileage may vary.
 
 Updating to these builds is better suited for more experienced users and developers, although everyone is welcome to test them and provide feedback.
 
-The development is brought forward on different branches of the RuneUI repository:   
-[dev branch](https://github.com/RuneAudio/RuneUI/tree/dev) - closer to the main    
-[next branch](https://github.com/RuneAudio/RuneUI/tree/next) - more experimental one
+Currently, development is progressing along different branches in the RuneUI repository:
+[dev branch](https://github.com/RuneAudio/RuneUI/tree/dev) - closer to the main branch, this is likely to be merged with main on a regualr basis
+[next branch](https://github.com/RuneAudio/RuneUI/tree/next) - a more experimental one, typically intended to be the next version of RuneAudio
 
 These are the required steps to switch from the main branch to another one (the following example refers to the *dev* branch):
 
- 1. delete all the content of /var/www (including hidden files)   
+ 1. delete the contents of /var/www (including hidden files)   
  **DOUBLE CHECK the path before entering the command!**
 
     `rm -rf /var/www/{*,.*}`
 
- 2. clone the 'dev' branch on your device
+ 2. clone the 'dev' branch on your device (notice the `-b dev`)
 
     `git clone -b dev https://github.com/RuneAudio/RuneUI.git/ /var/www`
 
@@ -45,4 +45,4 @@ These are the required steps to switch from the main branch to another one (the 
  
  4. reboot your device
  
- As final step, always remember to hard refresh the cache of your browser.
+ As final step, always remember to hard refresh the cache of your browser. (ctrl + F5)
