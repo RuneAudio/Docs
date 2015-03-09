@@ -9,14 +9,14 @@ You can check for and install these updates from the UI:
  1. go to the **dev section** of the UI, typing [http://runeaudio/dev](http://runeaudio/dev) or [http://runeaudio.local/dev](http://runeaudio.local/dev) in your browser
  2. set the **Dev Mode** to **enabled**
  3. click the **gitpull** button (*Update RuneUI*)
- 4. hard refresh the cache of your browser (ctrl + F5)
+ 4. hard refresh the cache of your browser ([howto](http://www.refreshyourcache.com/en/cache/))
 
 Alternatively, you can do this from the terminal:
 
     cd /var/www
     git pull
 
-As final step, always remember to hard refresh the cache of your browser. (ctrl + F5)
+As final step, always remember to hard refresh the cache of your browser. ([howto](http://www.refreshyourcache.com/en/cache/))
 
 ##Nightly builds
 
@@ -45,4 +45,4 @@ These are the required steps to switch from the main branch to another one (the 
  
  4. reboot your device
  
- As final step, always remember to hard refresh the cache of your browser. (ctrl + F5)
+ As final step, always remember to hard refresh the cache of your browser. ([howto](http://www.refreshyourcache.com/en/cache/))
