@@ -15,6 +15,7 @@ Alternatively, you can do this from the terminal:
 
     cd /var/www
     git pull
+    curl -s -X GET 'http://localhost/clear'
 
 As final step, always remember to hard refresh the cache of your browser. ([howto](http://www.refreshyourcache.com/en/cache/))
 
