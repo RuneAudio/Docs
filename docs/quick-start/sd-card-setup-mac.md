@@ -32,7 +32,7 @@ Before proceeding with the flash of the SD card, you should unmount it first. To
 Do NOT eject it, simply unmount it with a right-click.  
 Alternatively, you can also unmount the disk manually, by typing the following in the terminal window:
 
-`diskutil unmount /dev/disk2`
+`diskutil unmountDisk /dev/disk2`
 
 > [WARNING] **Double-check your card's drive letter!** Choosing the wrong drive will likely result in data loss or even worse harm to your computer.
 
