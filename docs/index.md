@@ -16,7 +16,11 @@ This is the official documentation for [RuneAudio](http://www.runeaudio.com/ "Ru
     - [Network](runeui/network.md)
     - [Debug](runeui/debug.md)
 3. [Troubleshooting](troubleshooting/common-troubleshooting.md)
+    - [Common troubleshooting](troubleshooting/rpi-troubleshooting.md)
     - [Raspberry Pi troubleshooting](troubleshooting/rpi-troubleshooting.md)
+    - [Extend a partition](troubleshooting/extend-partition-sd.md)
+    - [Getting updates](troubleshooting/updating.md)
+4. [Development](development/contribute.md)
 
 ## Contribution
 

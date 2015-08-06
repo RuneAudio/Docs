@@ -23,5 +23,6 @@ pages:
 - ['runeui\debug.md', 'RuneUI', 'Debug']
 - ['troubleshooting\common-troubleshooting.md', 'Troubleshoot', 'Common troubleshooting']
 - ['troubleshooting\rpi-troubleshooting.md', 'Troubleshoot', 'Raspberry Pi troubleshooting']
+- ['troubleshooting\extend-partition-sd.md', 'Troubleshoot', 'Extend a partition']
 - ['troubleshooting\updating.md', 'Troubleshoot', 'Getting updates']
 - ['development\contribute.md', 'Dev', 'Contribute']
