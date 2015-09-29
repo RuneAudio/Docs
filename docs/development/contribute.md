@@ -13,7 +13,7 @@ RuneUI is developed in **PHP** (backend) and **HTML**, **CSS** and **Javascript*
 [[RuneUI on GitHub]](https://github.com/RuneAudio/RuneUI "RuneUI on GitHub")
 
 ##OS maintainment
-[RuneOS](http://www.runeaudio.com/about/#runeos "RuneOS") is a customized and optimized build of the [Arch Linux](https://www.archlinux.org/) distro, specifically tailored around the scope of best sound quality achievement. The system continuously needs to be updated and potred to all the [ceritified platforms](http://www.runeaudio.com/certified-devices/ "Certified platforms").
+[RuneOS](http://www.runeaudio.com/about/#runeos "RuneOS") is a customized and optimized build of the [Arch Linux](https://www.archlinux.org/) distro, specifically tailored around the scope of best sound quality achievement. The system continuously needs to be updated and ported to all the [ceritified platforms](http://www.runeaudio.com/certified-devices/ "Certified platforms").
 
 [[RuneOS on GitHub]](https://github.com/RuneAudio/RuneOS "RuneOS on GitHub")
 
