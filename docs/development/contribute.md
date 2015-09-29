@@ -6,13 +6,13 @@ An interesting reading for anyone who wants to contribute to the project in some
 [[14 Ways to Contribute to Open Source without Being a Programming Genius or a Rock Star]](http://blog.smartbear.com/programming/14-ways-to-contribute-to-open-source-without-being-a-programming-genius-or-a-rock-star/ "14 Ways to Contribute to Open Source without Being a Programming Genius or a Rock Star")
 
 ##Coding
-[RuneUI](http://www.runeaudio.com/about/#runeui "RuneUI") is the default UI of RuneAudio. Due to its nature (web interface) it's platform agnostic and responsive, and can be used from any device capable of running a modern web browser.
+[RuneUI](http://www.runeaudio.com/about/#runeui "RuneUI") is the default UI of RuneAudio. Due to its nature (web interface) it is platform agnostic and responsive, and can be used from any device capable of running a modern web browser.
 
 RuneUI is developed in **PHP** (backend) and **HTML**, **CSS** and **Javascript** (frontend).
 
 [[RuneUI on GitHub]](https://github.com/RuneAudio/RuneUI "RuneUI on GitHub")
 
-##OS maintainment
+##OS Maintenance
 [RuneOS](http://www.runeaudio.com/about/#runeos "RuneOS") is a customized and optimized build of the [Arch Linux](https://www.archlinux.org/) distro, specifically tailored around the scope of best sound quality achievement. The system continuously needs to be updated and ported to all the [certified platforms](http://www.runeaudio.com/certified-devices/ "Certified platforms").
 
 [[RuneOS on GitHub]](https://github.com/RuneAudio/RuneOS "RuneOS on GitHub")
