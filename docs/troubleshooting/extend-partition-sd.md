@@ -2,7 +2,7 @@
 
 RuneAudio is commonly distributed in system images which will fit on 2GB SD cards. The default partition sizes are limited to that total amount, so if you are using a bigger SD card you will probably want to take advantage of all the space available.  
 
-## Make use of unusued space on a SD card
+## Make use of unused space on a SD card
 
 A command which may be of interest to make use of unused space on the SD card is **resize2fs**. 
 This resizes the filesystem, and can be used while the filesystem is online (i.e. no need to unmount it).
