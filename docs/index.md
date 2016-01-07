@@ -4,23 +4,28 @@ This is the official documentation for [RuneAudio](http://www.runeaudio.com/ "Ru
 
 ## Table of contents
 
-1. [Quick start guide](quick-start/quick-start-guide.md)
+1. **Quick start**
+    - [Quick start guide](quick-start/quick-start-guide.md)
     - [Flashing the SD Card using Windows](quick-start/sd-card-setup-windows.md)
     - [Flashing the SD Card using Mac](quick-start/sd-card-setup-mac.md)
     - [Flashing the SD Card using Linux](quick-start/sd-card-setup-linux.md)
-2. [RuneUI](runeui/runeui.md)
+    - [Raspberry Pi hadware setup](quick-start/rpi-hardware-setup.md)
+2. **RuneUI**
+    - [Introduction to RuneUI](runeui/runeui.md)
     - [Playback](runeui/playback.md)
     - [Sources](runeui/sources.md)
     - [MPD](runeui/mpd.md)
     - [Settings](runeui/settings.md)
     - [Network](runeui/network.md)
     - [Debug](runeui/debug.md)
-3. [Troubleshooting](troubleshooting/common-troubleshooting.md)
+3. **Troubleshooting**
     - [Common troubleshooting](troubleshooting/rpi-troubleshooting.md)
     - [Raspberry Pi troubleshooting](troubleshooting/rpi-troubleshooting.md)
     - [Extend a partition](troubleshooting/extend-partition-sd.md)
     - [Getting updates](troubleshooting/updating.md)
-4. [Development](development/contribute.md)
+4. **Development**
+    - [Contribute](development/contribute.md)
+    - [RARC - RuneAudio Remote Control](development/rarc.md)
 
 ## Contribution
 

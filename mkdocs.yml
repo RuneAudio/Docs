@@ -26,3 +26,4 @@ pages:
 - ['troubleshooting\extend-partition-sd.md', 'Troubleshoot', 'Extend a partition']
 - ['troubleshooting\updating.md', 'Troubleshoot', 'Getting updates']
 - ['development\contribute.md', 'Dev', 'Contribute']
+- ['development\rarc.md', 'Dev', 'RARC - RuneAudio Remote Control']
