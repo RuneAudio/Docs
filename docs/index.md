@@ -25,7 +25,7 @@ This is the official documentation for [RuneAudio](http://www.runeaudio.com/ "Ru
     - [Getting updates](troubleshooting/updating.md)
 4. **Development**
     - [Contribute](development/contribute.md)
-    - [RARC - RuneAudio Remote Control](development/rarc.md)
+    - [RuneAudio Remote Control](development/runeaudio-remote-control.md)
 
 ## Contribution
 
