@@ -2,9 +2,9 @@
 
 ![RuneAudio for Android](http://www.runeaudio.com/media/docs/runeaudio-android-mockup.png "runeaudio-android-mockup.png")
 
-[![Get the app on Google Play](http://www.runeaudio.com/media/docs/google-play-badge.png "google-play-badge.png")](https://play.google.com/store/apps/details?id=org.xbmc.kore)
+[![Get the app on Google Play](http://www.runeaudio.com/media/docs/google-play-badge.png "google-play-badge.png")](https://play.google.com/store/search?q=runeaudio)
 
-**RuneAudio Remote Control** makes even easier to control one or more RuneAudio music players from your Android™ device.
+**RuneAudio Remote Control** makes it even easier to control one or more RuneAudio music players from your Android™ device.
 
 ## Main features
 
