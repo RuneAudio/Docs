@@ -2,7 +2,7 @@
 
 ![RuneAudio for Android](http://www.runeaudio.com/media/docs/runeaudio-android-mockup.png "runeaudio-android-mockup.png")
 
-[![Get the app on Google Play](http://www.runeaudio.com/media/docs/google-play-badge.png "google-play-badge.png")](https://play.google.com/store/search?q=runeaudio)
+[![Get the app on Google Play](http://www.runeaudio.com/media/docs/google-play-badge.png "google-play-badge.png")](https://play.google.com/store/apps/details?id=com.runeaudio)
 
 **RuneAudio Remote Control** makes it even easier to control one or more RuneAudio music players from your Android™ device.
 
@@ -60,7 +60,7 @@ Replace the following values with the desired ones:
 ## Support
 
 To get support or to discuss about the app development, join us the dedicated thread on the forum.   
-[[RuneAudio Remote Control - RuneAudio Forum]](http://www.runeaudio.com/forum/)
+[[RuneAudio Remote Control - RuneAudio Forum]](http://www.runeaudio.com/forum/runeaudio-remote-control-for-android-t3154.html)
 
 ## Credits
 
