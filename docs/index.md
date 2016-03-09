@@ -9,7 +9,7 @@ This is the official documentation for [RuneAudio](http://www.runeaudio.com/ "Ru
     - [Flashing the SD Card using Windows](quick-start/sd-card-setup-windows.md)
     - [Flashing the SD Card using Mac](quick-start/sd-card-setup-mac.md)
     - [Flashing the SD Card using Linux](quick-start/sd-card-setup-linux.md)
-    - [Raspberry Pi hadware setup](quick-start/rpi-hardware-setup.md)
+    - [Raspberry Pi hardware setup](quick-start/rpi-hardware-setup.md)
 2. **RuneUI**
     - [Introduction to RuneUI](runeui/runeui.md)
     - [Playback](runeui/playback.md)
