@@ -3,7 +3,7 @@ Raspberry Pi hardware setup
 
 Intro
 -----
-Raspberry Pi models are quite cheap, as they are 'bare bones' boards. Sometimes you can purchase all the required hardware accessories as a package. The hardware is often so common that it is already laying around your house. Either way, here are the necessary and optional things you will need to purchase (or scrounge) in order to start up your Raspberry Pi and to get the most out of RuneAudio.
+Raspberry Pi models are quite inexpensive, as they are 'bare bones' boards. Sometimes you can purchase all the required hardware accessories as a package. The hardware is often so common that it is already laying around your house. Either way, here are the necessary and optional things you will need to purchase (or scrounge) in order to start up your Raspberry Pi and to get the most out of RuneAudio.
 
 Required Items
 --------------
@@ -14,19 +14,23 @@ Required Items
 
 ###Power Supply
 
-Raspberry Pi models function on 5V DC power. They require a minimum of 2A available current to avoid brownouts on the board. 'Wall warts' are the simple start. Make sure your power supply is appropriate for the grid power in your country, and that the other end terminates in a micro-USB plug. 
+Raspberry Pi models function on 5V DC power. To avoid possible brownouts on the board, the minimum recommended current rating is 2A. 'Wall warts' are the most common form of power supply used. Make sure your power supply is appropriate for the grid power in your country, and that the power cable terminates in a micro-USB plug. 
 
 ![Raspberry Pi power supply](https://lh5.googleusercontent.com/QM8JJUk9-fI1BVrAX-LsOAreSKcXRRECpZdPQtihOQ=s400 "wall wart.jpg")
 
-Many adjustable AC-DC switching power supplies on the market allow adjustment to obtain a narrow (or sometimes wide) voltage output.
+There are also many variable AC-DC switching power supplies on the market with either narrow or wide voltage output ranges.
 
 > [WARNING] <i class="fa fa-exclamation sx"></i> Make certain your power supply is adjusted as close to 5V DC as possible!
 
-The Raspberry Pi board requires a fairly narrow tolerance voltage output. It is susceptible to both brownouts (below 4.7V DC) and frying your circuit paths (above 5.2V DC). Make certaiin your power supply is tuned as close to 5V DC as possible, to allow for voltage swing in either direction. Brownouts will also occur if the power supply is underrated, or the power draw is too high.
+The Raspberry Pi board requires a fairly tight supply voltage tolerance. It is susceptible to both brownouts (below 4.75V DC) and frying your circuit paths (above 5.25V DC). Make certain your power supply is adjusted as close to 5V DC as possible, to allow for voltage swings in either direction. Brownouts will also occur if the power supply is underrated, or the power draw is too high.
+
+When adjusting a variable power supply, the voltage should be measured at the Raspberry Pi circuit board (some Pi variants have test points for that purpose), and NOT at the power supply terminals.  This is because micro-USB cables often have a large voltage drop from the power supply to the board, especially if longer than 1m (3ft).
 
 ###4GB or larger SD card
 
-The Raspberry Pi B+ requires a micro SD card, earlier variants require a regular SD card, or a Micro SD stuffed in a card adapter. RuneOS requires somewhat less than 4GB. Sizes larger than 4GB are not necessary, though models smaller than 8GB tend to have poor read-write speeds. Do yourself a favor and pick up a high-speed type, Class 6 or 10. 40MB/s read times or better will make for a quicker, more satisfying interface. 
+The Raspberry Pi B+ and later models require a micro SD card. Earlier variants require a full size SD card, or a Micro SD card adapter. 
+
+RuneOS requires somewhat less than 4GB. SD cards larger than 4GB are not necessary, although models smaller than 8GB tend to have poor read-write speeds. Do yourself a favor and pick up a high-speed type, Class 6 or 10. 40MB/s read times or better will make for a quicker response, and more satisfying experience. 
 
 ![Standard micro SD card](https://lh6.googleusercontent.com/zjukPBb75S6LZl6_mPkqTQd9K2ctxCSpPv0e9qGR5A=s400 "samsungsd.jpg")
 
@@ -53,9 +57,9 @@ On first use, RuneAudio requires a 'wired' Ethernet connection, and a local path
 Optional Items
 --------------
 
-###Onboard DAC or Digital Output boards
+###DACs and Digital output boards
 
-Several small manufacturers have developed fine output boards (DACs) that may be mated directly with Raspberry Pi variants. They allow either direct, high quality analog sound output ready for your amplifier, or TosLink digital signal that stand-alone DACs can interpret into analog signal. The native headphone output on all Raspberry Pi variants is pretty noisy and benefits by any DAC stage. These 'Hats' may not be required with your system, if your DAC has a USB input that can recieve the proper signal from the RPi. 
+By comparison to a true 16- or 24-bit DAC, the native headphone output on all Raspberry Pi variants is pretty noisy and poor quality. Several small manufacturers have developed output boards (DACs) that may be mated directly with Raspberry Pi variants. They provide either direct, high quality analog sound output ready for your amplifier, or S/PDIF Coax and TosLink digital signals for stand-alone DACs. These 'HATs' may not be required with your system if you own a DAC which can be connected to the RPi through a USB cable. 
 
 ![enter image description here](https://lh5.googleusercontent.com/-ouxLDtMlQ8o/VEtGH84mkII/AAAAAAAAAHs/-wxF-yTLmaM/s400/iqaudiohat.png "iqaudiohat.png")
 
