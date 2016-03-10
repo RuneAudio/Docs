@@ -3,7 +3,7 @@
 The RuneAudio Player is designed to run "headless", but under some circumstances, connecting an HDMI monitor and USB keyboard can be helpful.
 ##Raspberry Pi not booting
 The causes may include a poor power supply, SD card problems, physical connection problems, software issues, USB devices, and other hardware more-or-less in that order. 
-###Power Supply and Power LED
+###Power supply and power LED
 When the power supply turns on and reaches 5V, the red LED turns on and stays on.  If the LED does not turn on, blinks, or dimms, there is a problem with power.
 
 ###Boot sequence failures
