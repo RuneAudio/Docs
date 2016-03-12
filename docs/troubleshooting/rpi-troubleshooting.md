@@ -46,9 +46,11 @@ The green LED indicates SD card access. It flashes intermittently during normal 
 
 ##Config.txt settings
 
-The Raspberry Pi does not detect all possible hardware options on its own.  Some hardware settings are in /boot/config.txt, which can be edited on the same PC used to flash the SD card before the card is installed in a Pi. The method used to identify and configure added hardware starting with Raspberry Pi 2 is called Device Trees. 
+The Raspberry Pi does not detect all possible hardware options on its own.  Some hardware settings are in /boot/config.txt, which can be edited on the same PC used to flash the SD card before the card is installed in a Pi. Starting with the Pi 2, the method used to identify and configure added hardware is called a Device Tree, and the hardware setting found in config.txt is called "device_tree_overlay".
 
-The file /boot/config.txt can also be edited on the Pi, by logging in from a local console or a remote terminal interface (ssh on Linux, or PuTTY on Windows).
+The file /boot/config.txt can also be edited on the Pi, from a local console or a remote terminal interface (ssh on Linux, or PuTTY on Windows).  Example:
+
+        # nano /boot/config.txt
 
 For detailed information on other config.txt settings, such as setting HDMI monitor format, please read the official Raspberry Pi documentation:
 
@@ -62,15 +64,25 @@ A section in /boot/config.txt already includes device tree settings for supporte
 
 Example, enabling a HiFiBerry DAC+:
 
-    # Uncomment one of these lines to enable an audio interface
-    #device_tree_overlay=hifiberry-dac
-    device_tree_overlay=hifiberry-dacplus
-    #device_tree_overlay=hifiberry-digi
-    #device_tree_overlay=hifiberry-amp
-    #device_tree_overlay=iqaudio-dac
-    #device_tree_overlay=iqaudio-dacplus 
+        # Uncomment one of these lines to enable an audio interface
+        #device_tree_overlay=hifiberry-dac
+        device_tree_overlay=hifiberry-dacplus
+        #device_tree_overlay=hifiberry-digi
+        #device_tree_overlay=hifiberry-amp
+        #device_tree_overlay=iqaudio-dac
+        #device_tree_overlay=iqaudio-dacplus 
 
-After the Pi boots with a DAC board and the correct device tree overlay setting, the output device can be selected in the Rune UI, from a drop down list in Menu > MPD Configuration > Audio Output.  The next steps are usually to configure the volume control and other MPD music options.
+When a DAC or or digital audio output board is installed, the native analog output can be disabled by editing /etc/modules-load.d/raspberrypi.conf.  Example:
+
+        # nano /etc/modules-load.d/raspberrypi.conf
+
+Place a comment symbol "#" before "snd-bcm2835" in the second line:
+
+        #snd-bcm2835
+        
+After making the above changes, the Pi should be rebooted with all hardware installed.
+
+When the Pi boots with a DAC board and the correct device tree overlay setting, the output device can be selected in the Rune UI, from a drop down list in Menu > MPD Configuration > Audio Output.  The next steps are usually to configure the volume control and other MPD music options.
 
 ##Keyboard layout
 
@@ -107,7 +119,7 @@ Typical WiFi configuration steps:
 
 Tbd:
 
-###Rune UI does not open with default settings
+###Rune UI does not open with default ethernet settings
 
 ###No WiFi networks found
 
