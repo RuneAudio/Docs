@@ -130,15 +130,15 @@ If the WiFi adapter is not found, it may be bad, require too much power, or not 
 
 ###No WiFi networks found during discovery scan
 
-Check the activity LED on the WiFi dongle.  If No WiFi networks are found, and it is flashing normally, there is no WiFi reception.  If not flashing at all, the power requirements of the WiFi dongle may be over 150 mA, too high for a Pi USB port, or over 300 mA on a Pi 2 and later (unlikely).
+Check the activity LED on the WiFi dongle.  If No WiFi networks are found, and it is flashing normally, there is no WiFi reception.  If not flashing at all, the power requirements of the WiFi dongle may be over 150 mA, too high for a Pi USB port, or over 300 mA on a Pi B+, 2, and later versions (unlikely).
 
 ###Local WiFi network not found
 
-It may take one or two minutes to find all available WiFi networks.  If the local network does not appear in the list, the WiFi portion of the local router may be down or disabled, reception may be bad, or the router may be not be responding to WiFi discovery ("invisible" for security reasons).
+It may take one or two minutes to find all available WiFi networks.  If the local network does not appear in the list, the WiFi portion of the local router may be down or disabled, reception may be bad, or the router may not be responding to WiFi discovery ("invisible" for security reasons).
 
 ###No WiFi connection to a selected network
 
-Working network connections are identified with a green check mark.  Inactive network connections are identified with a red X.  Verify WiFi settings made during WiFi configuration. `iwconfig` can be used to check WiFi signal strength, link quality, and that wlan0 power management is turned off (power management may cause the WiFi adapter to "go to sleep"). Typical output of iwconfig:
+Working network connections are identified with a green check mark.  Inactive network connections are identified with a red X. Verify WiFi settings made during WiFi configuration. `iwconfig` can be used to check WiFi signal strength, link quality, and that wlan0 power management is turned off (power management may cause the WiFi adapter to "go to sleep"). Typical output of iwconfig:
 
         wlan0     IEEE 802.11bgn  ESSID:"ABCD EFGH"  Nickname:"<WIFI@REALTEK>"
                   Mode:Managed  Frequency:2.412 GHz  Access Point: 28:27:BF:C9:A7:5D   
