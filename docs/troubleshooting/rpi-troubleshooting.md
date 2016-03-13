@@ -106,8 +106,9 @@ Typical WiFi configuration steps:
 
 - connect both an ethernet cable AND a  USB WiFi dongle to the Pi
 - connect power and wait for the Pi to boot
-- using a PC connected to the same network, start the Rune UI
-  (open a browser and go to `http://runeaudio`, or `http://runeaudio.local`)
+- using a PC connected to the same network, start the Rune UI from a browser
+  + Microsoft Windows: `http://runeaudio` (only works when Avahi/Bonjour is installed)
+  + OSX / Linux / Android: `http://runeaudio.local`
 - navigate to MENU > Network and select the wlan0 interface
 - wait for all available WiFi networks to be found
 - select the WiFi network from the list by its SSID
