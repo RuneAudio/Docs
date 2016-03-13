@@ -42,7 +42,7 @@ On a Pi B+ and Pi 2, this can be increased (using a parameter in the /boot/confi
 The text scrolling on the screen shows various parts of the OS being loaded.  If the boot process halts with text on the screen (other than at a login prompt), it may indicate a problem such as a corrupt SD card, a failed software update, power failure during SD card write, etc.  This is also known as Kernel Panic, the Linux equivalent of a BSOD (Blue Screen of Death) on Windows computers.
 
 ###Activity LED
-The green LED indicates SD card access. It flashes intermittently during normal operation.  If there is no music playing and no access from the Rune UI, it stays off.
+The green ACT LED indicates SD card access. It flashes intermittently during normal operation.  If there is no music playing and no access from the Rune UI, it stays off.  On power up, a solid green ACT LED indicates the Pi could not load the OS from the SD card.  A burst of rapid flashes repeating about every second means the Pi cannot access the SD card starting sometime after the OS has been loaded and running.
 
 ##Config.txt settings
 
@@ -57,6 +57,8 @@ For detailed information on other config.txt settings, such as setting HDMI moni
 >[Raspberry Pi config.txt](https://www.raspberrypi.org/documentation/configuration/config-txt.md)
 >
 >[Raspberry Pi Device Trees](https://www.raspberrypi.org/documentation/configuration/device-tree.md)
+>
+>[SSH using Windows](https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md)
 
 ##Enabling I2S DACs and digital output boards
 
@@ -109,22 +111,46 @@ Typical WiFi configuration steps:
 - navigate to MENU > Network and select the wlan0 interface
 - wait for all available WiFi networks to be found
 - select the WiFi network from the list by its SSID
-- enter WiFi settings including security, password, and select DHCP or static IP assignment
+- enter WiFi settings including security, password, and select DHCP or a static IP
 - save the WiFi profile (IMPORTANT!)
 - wait for a WiFi connection to be established
-- write down the wlan0 IP address for future use
+- write down the wlan0 IP address for later use
 - shutdown the Pi from the Rune UI via MENU > Turnoff
 - disconnect the ethernet cable
 - reboot the Pi by turning power off and back on
 
-Tbd:
+###No wlan0 network interface listed
+From terminal, `lsusb` can be used to list all detected USB devices.  A typical WiFi adapter will look like this:
 
-###Rune UI does not open with default ethernet settings
+        Bus 001 Device 004: ID 7392:7811 Edimax Technology Co., Ltd EW-7811Un 802.11n Wireless Adapter [Realtek RTL8188CUS]
 
-###No WiFi networks found
+If the WiFi adapter is not found, it may be bad, require too much power, or not identifiable by the RuneOS.  See list of tested WiFi adapters on elinux.org:
+
+>[RPi USB Wi-Fi Adapters](http://elinux.org/RPi_USB_Wi-Fi_Adapters)
+
+###No WiFi networks found during discovery scan
+
+Check the activity LED on the WiFi dongle.  If No WiFi networks are found, and it is flashing normally, there is no WiFi reception.  If not flashing at all, the power requirements of the WiFi dongle may be over 150 mA, too high for a Pi USB port, or over 300 mA on a Pi 2 and later (unlikely).
 
 ###Local WiFi network not found
 
-###No WiFi connection
+It may take one or two minutes to find all available WiFi networks.  If the local network does not appear in the list, the WiFi portion of the local router may be down or disabled, reception may be bad, or the router may be not be responding to WiFi discovery ("invisible" for security reasons).
 
-###Rune UI does not open after WiFi configuration
+###No WiFi connection to a selected network
+
+Working network connections are identified with a green check mark.  Inactive network connections are identified with a red X.  Verify WiFi settings made during WiFi configuration. `iwconfig` can be used to check WiFi signal strength, link quality, and that wlan0 power management is turned off (power management may cause the WiFi adapter to "go to sleep"). Typical output of iwconfig:
+
+        wlan0     IEEE 802.11bgn  ESSID:"ABCD EFGH"  Nickname:"<WIFI@REALTEK>"
+                  Mode:Managed  Frequency:2.412 GHz  Access Point: 28:27:BF:C9:A7:5D   
+                  Bit Rate:72.2 Mb/s   Sensitivity:0/0  
+                  Retry:off   RTS thr:off   Fragment thr:off
+                  Encryption key:****-****-****-****-****-****-****-****   Security mode:open
+                  Power Management:off
+                  Link Quality=100/100  Signal level=77/100  Noise level=0/100
+                  Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+                  Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+        lo        no wireless extensions.
+        eth0      no wireless extensions.
+        ifb0      no wireless extensions.
+        ifb1      no wireless extensions.
+
