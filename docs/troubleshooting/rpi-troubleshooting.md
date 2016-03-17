@@ -82,7 +82,7 @@ Place a comment symbol "#" before "snd-bcm2835" in the second line:
 
         #snd-bcm2835
         
-After making the above changes, the Pi should be rebooted with all hardware installed.
+After making the above changes, the Pi can be rebooted with all hardware installed.
 
 When the Pi boots with a DAC board and the correct device tree overlay setting, the output device can be selected in the Rune UI, from a drop down list in Menu > MPD Configuration > Audio Output.  The next steps are usually to configure the volume control and other MPD music options.
 
@@ -131,7 +131,7 @@ If the WiFi adapter is not found, it may be bad, require too much power, or not 
 
 ###No WiFi networks found during discovery scan
 
-Check the activity LED on the WiFi dongle.  If No WiFi networks are found, and it is flashing normally, there is no WiFi reception.  If not flashing at all, the power requirements of the WiFi dongle may be over 150 mA, too high for a Pi USB port, or over 300 mA on a Pi B+, 2, and later versions (unlikely).
+The activity LED on the WiFi dongle provides minimal indication of WiFi activity.  If No WiFi networks are found, and it is flashing normally, there is no WiFi reception.  If not flashing at all, the power requirements of the WiFi dongle may be over 150 mA, too high for a Pi USB port, or over 300 mA on a Pi B+, 2, and later versions (unlikely).
 
 ###Local WiFi network not found
 
