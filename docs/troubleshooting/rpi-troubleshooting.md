@@ -1,5 +1,5 @@
 # Raspberry Pi troubleshooting
-==============================
+
 The RuneAudio Player is designed to run "headless", but under some circumstances, connecting an HDMI monitor and USB keyboard can be helpful.
 
 ##Raspberry Pi not booting
