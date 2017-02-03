@@ -23,3 +23,11 @@ Next, use the **resize2fs** command in this way:
 
 (or `/dev/mmcblk0p1` if the main RuneOS partition was `mmcblk0p1`).  
 This will resize the filesystem to fill the whole partition, and you will have a lot more space available for stuff.
+
+**Alternative 1-line script**  
+#
+SSH command - [**expand.sh**](https://github.com/rern/RuneAudio/tree/master/expand_partition)  
+_(For normallly installed SD card only)_
+```sh
+wget -q --show-progress -O expand.sh "https://github.com/rern/RuneAudio/blob/master/expand_partition/expand.sh?raw=1"; chmod +x expand.sh; ./expand.sh
+```
