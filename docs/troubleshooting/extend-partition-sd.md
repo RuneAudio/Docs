@@ -26,8 +26,4 @@ This will resize the filesystem to fill the whole partition, and you will have a
 
 **Alternative 1-line script**  
 #
-SSH command - [**expand.sh**](https://github.com/rern/RuneAudio/tree/master/expand_partition)  
-_(For normallly installed SD card only)_
-```sh
-wget -q --show-progress -O expand.sh "https://github.com/rern/RuneAudio/blob/master/expand_partition/expand.sh?raw=1"; chmod +x expand.sh; ./expand.sh
-```
+[**expand.sh**](https://github.com/rern/RuneAudio/tree/master/expand_partition)  
