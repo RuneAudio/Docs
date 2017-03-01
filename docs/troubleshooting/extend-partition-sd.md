@@ -17,13 +17,13 @@ First you have to use **fdisk** to resize the partition to fill the whole SD car
  4. Press "**t**" and enter the value "83" to mark it as a Linux partition. 
  5. Press "**w**" to write changes and exit. You may have to reboot after this for changes to be registered. This has resized the partition, but not yet the filesystem.
 
+or use **sfdisk**  
+
+    root=$( mount | sed -n '/on \/ type/p' | awk '{print $1}' ); echo ',+' | sfdisk -f -N ${root:-1} ${root:0:12} --no-reread
+
 Next, use the **resize2fs** command in this way:
 
     resize2fs /dev/mmcblk0p0
 
 (or `/dev/mmcblk0p1` if the main RuneOS partition was `mmcblk0p1`).  
 This will resize the filesystem to fill the whole partition, and you will have a lot more space available for stuff.
-
-**Alternative 1-line script**  
-#
-[**expand.sh**](https://github.com/rern/RuneAudio/tree/master/expand_partition)  
