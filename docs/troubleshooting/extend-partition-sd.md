@@ -17,9 +17,9 @@ This resizes the filesystem, and can be used while the filesystem is online (i.e
  4. Press "**t**" and enter the value "83" to mark it as a Linux partition. 
  5. Press "**w**" to write changes and exit.
 
-- or use **sfdisk**  
+- or use **1-line script**  
 
-    root=$( mount | sed -n '/on \/ type/p' | awk '{print $1}' ); echo ',+' | sfdisk -f -N ${root:-1} ${root:0:12} --no-reread
+    root=$( mount | sed -n '/on \/ type/p' | awk '{print $1}' ); echo -e 'd\n\nn\n\n\n\n\nw' | fdisk ${root:0:12} > /dev/null 2>&1
 
 You may have to reboot after this for changes to be registered. This has resized the partition, but not yet the filesystem.  
 
