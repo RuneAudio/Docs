@@ -19,7 +19,7 @@ This resizes the filesystem, and can be used while the filesystem is online (i.e
 
 - or use **1-line script**  
 
-    root=$( mount | sed -n '/on \/ type/p' | awk '{print $1}' ); echo -e 'd\n\nn\n\n\n\n\nw' | fdisk ${root:0:12} > /dev/null 2>&1
+    root=$( mount | sed -n '/on \/ type/p' | awk '{print $1}' ); echo -e 'd\n\nn\n\n\n\n\nw' | fdisk ${root:0:12} > /dev/null 2>&1; echo 'Reboot > resize2fs' $root
 
 You may have to reboot after this for changes to be registered. This has resized the partition, but not yet the filesystem.  
 
