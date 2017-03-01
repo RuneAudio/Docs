@@ -7,7 +7,7 @@ RuneAudio is commonly distributed in system images which will fit on 2GB SD card
 A command which may be of interest to make use of unused space on the SD card is **resize2fs**. 
 This resizes the filesystem, and can be used while the filesystem is online (i.e. no need to unmount it).
 
-First you have to use **fdisk** to resize the partition to fill the whole SD card. You can do this by doing:
+- First you have to use **fdisk** to resize the partition to fill the whole SD card. You can do this by doing:
     
     fdisk /dev/mmcblk0
     
@@ -15,7 +15,13 @@ First you have to use **fdisk** to resize the partition to fill the whole SD car
  2. Delete it, pressing "**d**" and choosing the relevant partition number.
  3. Press "**n**" to make a new partition, and "**p**" to select a primary partition. Enter the same start block that you wrote down above, and allow it to use the default end block (the last block available on the device).
  4. Press "**t**" and enter the value "83" to mark it as a Linux partition. 
- 5. Press "**w**" to write changes and exit. You may have to reboot after this for changes to be registered. This has resized the partition, but not yet the filesystem.
+ 5. Press "**w**" to write changes and exit.
+
+- or use **1-line script**  
+
+    root=$( mount | sed -n '/on \/ type/p' | awk '{print $1}' ); echo -e 'd\n\nn\n\n\n\n\nw' | fdisk ${root:0:12} > /dev/null 2>&1; echo 'Reboot > resize2fs' $root
+
+You may have to reboot after this for changes to be registered. This has resized the partition, but not yet the filesystem.  
 
 Next, use the **resize2fs** command in this way:
 
